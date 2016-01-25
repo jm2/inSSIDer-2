@@ -41,4 +41,4 @@ inSSIDer 2 Wi-Fi Scanner
    See the License for the specific language governing permissions and
    limitations under the License.
 
-[1]: blob/master/WirelessFireless.zip
+[1]: WirelessFireless.zip?raw=true
