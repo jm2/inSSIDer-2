@@ -1,4 +1,4 @@
-﻿namespace inSSIDer.UI.Controls
+﻿namespace WirelessFireless.UI.Controls
 {
     partial class NetworkInterfaceSelector
     {
@@ -51,7 +51,7 @@
             // ScanButton
             // 
             this.ScanButton.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.ScanButton.Image = global::inSSIDer.Properties.Resources.wifiPlay;
+            this.ScanButton.Image = global::WirelessFireless.Properties.Resources.wifiPlay;
             this.ScanButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ScanButton.Name = "ScanButton";
             this.ScanButton.Size = new System.Drawing.Size(51, 22);

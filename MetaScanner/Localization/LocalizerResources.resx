@@ -127,7 +127,7 @@
     <value>The application is up to date</value>
   </data>
   <data name="ConfigSystemError" xml:space="preserve">
-    <value>The .NET Framework configuration on this computer is corrputed, inSSIDer cannot continue. Repair the configuration and then run inSSIDer again.
+    <value>The .NET Framework configuration on this computer is corrputed, WirelessFireless cannot continue. Repair the configuration and then run WirelessFireless again.
 
 We're sorry for any inconvenience.</value>
   </data>
@@ -165,7 +165,7 @@ We're sorry for any inconvenience.</value>
     <value>GPS: On</value>
   </data>
   <data name="GpxFileOpenError" xml:space="preserve">
-    <value>Error opening one of the selected log files. Make sure inSSIDer is not still logging to it.</value>
+    <value>Error opening one of the selected log files. Make sure WirelessFireless is not still logging to it.</value>
   </data>
   <data name="HDOPPlusValue" xml:space="preserve">
     <value>HDOP: {0}</value>
@@ -234,14 +234,14 @@ We're sorry for any inconvenience.</value>
     <value>Error: wlanapi.dll could not be found.</value>
   </data>
   <data name="WlanServiceNotFound7" xml:space="preserve">
-    <value>inSSIDer requires the WLAN AutoConfig service, which appears to be stopped. 
-Please start WLAN AutoConfig and then run inSSIDer. 
+    <value>WirelessFireless requires the WLAN AutoConfig service, which appears to be stopped. 
+Please start WLAN AutoConfig and then run WirelessFireless. 
 
 Thanks!</value>
   </data>
   <data name="WlanServiceNotFoundXP" xml:space="preserve">
-    <value>inSSIDer requires the Wireless Zero Configuration (WZC) Service, which appears to be stopped. 
-Please start WZC and then run inSSIDer. 
+    <value>WirelessFireless requires the Wireless Zero Configuration (WZC) Service, which appears to be stopped. 
+Please start WZC and then run WirelessFireless. 
 
 Thanks!</value>
   </data>

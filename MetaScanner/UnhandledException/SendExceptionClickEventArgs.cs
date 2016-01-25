@@ -24,7 +24,7 @@
 ////////////////////////////////////////////////////////////////
 using System;
 
-namespace inSSIDer.UnhandledException
+namespace WirelessFireless.UnhandledException
 {
     public class SendExceptionClickEventArgs : EventArgs
     {

@@ -29,9 +29,9 @@ using System.IO;
 using System.Linq;
 using System.Xml;
 
-using inSSIDer.Misc;
+using WirelessFireless.Misc;
 
-namespace inSSIDer.FileIO
+namespace WirelessFireless.FileIO
 {
     #region Enumerations
 

@@ -13,7 +13,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Threading;
 
-namespace inSSIDer.UnhandledException
+namespace WirelessFireless.UnhandledException
 {
     /// <summary>
     /// Represents an email message to be sent through MAPI.

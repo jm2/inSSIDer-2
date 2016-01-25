@@ -28,12 +28,12 @@ using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Timers;
-using inSSIDer.Misc;
+using WirelessFireless.Misc;
 using ManagedWifi;
 using MetaGeek.IoctlNdis;
 using MetaGeek.WiFi;
 
-namespace inSSIDer.Scanning.Interfaces
+namespace WirelessFireless.Scanning.Interfaces
 {
     public class NdisScanInterface : IScanningInterface
     {

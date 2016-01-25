@@ -1,4 +1,4 @@
-﻿namespace inSSIDer.UI.Controls
+﻿namespace WirelessFireless.UI.Controls
 {
     sealed partial class ScannerView
     {
@@ -41,7 +41,7 @@
             this.checkColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.macColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ssidColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rssiColumn = new inSSIDer.UI.Controls.SparkLineColumn();
+            this.rssiColumn = new WirelessFireless.UI.Controls.SparkLineColumn();
             this.channelColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vendorColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.securityColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,7 +67,7 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sparkLineColumn1 = new inSSIDer.UI.Controls.SparkLineColumn();
+            this.sparkLineColumn1 = new WirelessFireless.UI.Controls.SparkLineColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();

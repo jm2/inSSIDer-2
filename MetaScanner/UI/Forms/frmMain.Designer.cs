@@ -1,7 +1,7 @@
-﻿using inSSIDer.HTML;
-using inSSIDer.UI.Controls;
+﻿using WirelessFireless.HTML;
+using WirelessFireless.UI.Controls;
 
-namespace inSSIDer.UI.Forms
+namespace WirelessFireless.UI.Forms
 {
     partial class FormMain
     {
@@ -52,9 +52,9 @@ namespace inSSIDer.UI.Forms
             this.nextTabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prevTabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inSSIDerForumsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.WirelessFirelessForumsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.aboutInSSIDerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutWirelessFirelessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gpsStatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.developerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.startNullScanningToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,20 +66,20 @@ namespace inSSIDer.UI.Forms
             this.gpsToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.locationToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.loggingToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.gripContainer1 = new inSSIDer.UI.Controls.GripSplitContainer();
+            this.gripContainer1 = new WirelessFireless.UI.Controls.GripSplitContainer();
             this.freeSoftwareLabel = new System.Windows.Forms.Label();
-            this.scannerView = new inSSIDer.UI.Controls.ScannerView();
+            this.scannerView = new WirelessFireless.UI.Controls.ScannerView();
             this.filtersView = new MetaGeek.Filters.Views.FiltersView();
-            this.detailsTabControl = new inSSIDer.UI.Controls.CustomTabControl();
+            this.detailsTabControl = new WirelessFireless.UI.Controls.CustomTabControl();
             this.tabTimeGraph = new System.Windows.Forms.TabPage();
-            this.timeGraph1 = new inSSIDer.UI.Controls.TimeGraph();
+            this.timeGraph1 = new WirelessFireless.UI.Controls.TimeGraph();
             this.tab24Chan = new System.Windows.Forms.TabPage();
-            this.chanView24 = new inSSIDer.UI.Controls.ChannelView();
+            this.chanView24 = new WirelessFireless.UI.Controls.ChannelView();
             this.tab58Chan = new System.Windows.Forms.TabPage();
-            this.chanView58 = new inSSIDer.UI.Controls.ChannelView();
+            this.chanView58 = new WirelessFireless.UI.Controls.ChannelView();
             this.tabGps = new System.Windows.Forms.TabPage();
-            this.gpsMon1 = new inSSIDer.UI.Controls.GpsMon();
-            this.networkInterfaceSelector1 = new inSSIDer.UI.Controls.NetworkInterfaceSelector();
+            this.gpsMon1 = new WirelessFireless.UI.Controls.GpsMon();
+            this.networkInterfaceSelector1 = new WirelessFireless.UI.Controls.NetworkInterfaceSelector();
             this.mainMenu.SuspendLayout();
             this.statusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gripContainer1)).BeginInit();
@@ -249,36 +249,36 @@ namespace inSSIDer.UI.Forms
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inSSIDerForumsToolStripMenuItem,
+            this.WirelessFirelessForumsToolStripMenuItem,
             this.toolStripSeparator4,
-            this.aboutInSSIDerToolStripMenuItem});
+            this.aboutWirelessFirelessToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
-            // inSSIDerForumsToolStripMenuItem
+            // WirelessFirelessForumsToolStripMenuItem
             // 
-            this.inSSIDerForumsToolStripMenuItem.Name = "inSSIDerForumsToolStripMenuItem";
-            this.inSSIDerForumsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.inSSIDerForumsToolStripMenuItem.Text = "inSSIDer Forums";
-            this.inSSIDerForumsToolStripMenuItem.Click += new System.EventHandler(this.InSsiDerForumsToolStripMenuItemClick);
+            this.WirelessFirelessForumsToolStripMenuItem.Name = "WirelessFirelessForumsToolStripMenuItem";
+            this.WirelessFirelessForumsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.WirelessFirelessForumsToolStripMenuItem.Text = "WirelessFireless Forums";
+            this.WirelessFirelessForumsToolStripMenuItem.Click += new System.EventHandler(this.WirelessFirelessForumsToolStripMenuItemClick);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(157, 6);
             // 
-            // aboutInSSIDerToolStripMenuItem
+            // aboutWirelessFirelessToolStripMenuItem
             // 
-            this.aboutInSSIDerToolStripMenuItem.Name = "aboutInSSIDerToolStripMenuItem";
-            this.aboutInSSIDerToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.aboutInSSIDerToolStripMenuItem.Text = "About inSSIDer";
-            this.aboutInSSIDerToolStripMenuItem.Click += new System.EventHandler(this.AboutInSsiDerToolStripMenuItemClick);
+            this.aboutWirelessFirelessToolStripMenuItem.Name = "aboutWirelessFirelessToolStripMenuItem";
+            this.aboutWirelessFirelessToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.aboutWirelessFirelessToolStripMenuItem.Text = "About WirelessFireless";
+            this.aboutWirelessFirelessToolStripMenuItem.Click += new System.EventHandler(this.AboutWirelessFirelessToolStripMenuItemClick);
             // 
             // gpsStatToolStripMenuItem
             // 
             this.gpsStatToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.gpsStatToolStripMenuItem.Image = global::inSSIDer.Properties.Resources.wifiPlay;
+            this.gpsStatToolStripMenuItem.Image = Properties.Resources.wifiPlay;
             this.gpsStatToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 186, 0);
             this.gpsStatToolStripMenuItem.Name = "gpsStatToolStripMenuItem";
             this.gpsStatToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
@@ -508,7 +508,7 @@ namespace inSSIDer.UI.Forms
             // 
             // chanView58
             // 
-            this.chanView58.Band = inSSIDer.UI.Controls.ChannelView.BandType.Band5000MHz;
+            this.chanView58.Band = WirelessFireless.UI.Controls.ChannelView.BandType.Band5000MHz;
             this.chanView58.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chanView58.ForeColor = System.Drawing.Color.DimGray;
             this.chanView58.Location = new System.Drawing.Point(0, 0);
@@ -570,7 +570,7 @@ namespace inSSIDer.UI.Forms
             this.MinimumSize = new System.Drawing.Size(700, 500);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "inSSIDer 2.1";
+            this.Text = "WirelessFireless 2.1";
             this.LocationChanged += new System.EventHandler(this.FormMainLocationChanged);
             this.SizeChanged += new System.EventHandler(this.FormMainSizeChanged);
             this.mainMenu.ResumeLayout(false);
@@ -609,8 +609,8 @@ namespace inSSIDer.UI.Forms
         private System.Windows.Forms.ToolStripMenuItem nextTabToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem prevTabToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutInSSIDerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inSSIDerForumsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutWirelessFirelessToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem WirelessFirelessForumsToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem crashToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gpsStatToolStripMenuItem;

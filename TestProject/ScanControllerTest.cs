@@ -1,4 +1,4 @@
-﻿using inSSIDer.Scanning;
+﻿using WirelessFireless.Scanning;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 

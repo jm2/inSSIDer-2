@@ -25,7 +25,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace inSSIDer.UI.Controls
+namespace WirelessFireless.UI.Controls
 {
     public class GripSplitContainer : SplitContainer
     {

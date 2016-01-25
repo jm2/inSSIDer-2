@@ -27,14 +27,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Timers;
-using inSSIDer.FileIO;
-using inSSIDer.Misc;
-using inSSIDer.Properties;
+using WirelessFireless.FileIO;
+using WirelessFireless.Misc;
+using WirelessFireless.Properties;
 using MetaGeek.Filters.Controllers;
 using MetaGeek.Gps;
 using MetaGeek.WiFi;
 
-namespace inSSIDer.Scanning
+namespace WirelessFireless.Scanning
 {
     /// <summary>
     /// This class scans for and stores WiFi AP data

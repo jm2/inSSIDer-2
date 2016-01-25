@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace inSSIDer.UI.Forms
+namespace WirelessFireless.UI.Forms
 {
     public partial class frmTest : Form
     {

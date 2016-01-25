@@ -1,4 +1,4 @@
-﻿namespace inSSIDer.UI.Forms
+﻿namespace WirelessFireless.UI.Forms
 {
     partial class frmTest
     {
@@ -64,7 +64,7 @@
             this.Controls.Add(this.txtDebug);
             this.Name = "frmTest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "inSSIDer Debug Output";
+            this.Text = "WirelessFireless Debug Output";
             this.ResumeLayout(false);
             this.PerformLayout();
 

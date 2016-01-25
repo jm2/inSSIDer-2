@@ -28,14 +28,14 @@ using System.ComponentModel;
 using System.Net.NetworkInformation;
 using System.Threading;
 using System.Windows.Forms;
-using inSSIDer.Misc;
-using inSSIDer.Scanning.Interfaces;
+using WirelessFireless.Misc;
+using WirelessFireless.Scanning.Interfaces;
 
 using MetaGeek.WiFi;
 
 using Timer = System.Timers.Timer;
 
-namespace inSSIDer.Scanning
+namespace WirelessFireless.Scanning
 {
     public class NetworkScannerN : IDisposable
     {

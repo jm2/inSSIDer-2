@@ -29,7 +29,7 @@ using System.Text;
 
 using MetaGeek.WiFi;
 
-namespace inSSIDer.FileIO
+namespace WirelessFireless.FileIO
 {
     public class Ns1Writer
     {

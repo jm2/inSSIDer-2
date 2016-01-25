@@ -27,7 +27,7 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
-using inSSIDer.UnhandledException;
+using WirelessFireless.UnhandledException;
 
 namespace MetaGeek.Utils
 {

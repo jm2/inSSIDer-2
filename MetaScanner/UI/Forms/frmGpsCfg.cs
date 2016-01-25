@@ -28,7 +28,7 @@ using System.Windows.Forms;
 
 using MetaGeek.Gps;
 
-namespace inSSIDer.UI.Forms
+namespace WirelessFireless.UI.Forms
 {
     public partial class FormGpsCfg : Form
     {

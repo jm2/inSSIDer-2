@@ -26,7 +26,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace inSSIDer.Misc
+namespace WirelessFireless.Misc
 {
     public static class SignalColor
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace inSSIDer.Localization {
+namespace WirelessFireless.Localization {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace inSSIDer.Localization {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("inSSIDer.Localization.LocalizerResources", typeof(LocalizerResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WirelessFireless.Localization.LocalizerResources", typeof(LocalizerResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -88,7 +88,7 @@ namespace inSSIDer.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The .NET Framework configuration on this computer is corrputed, inSSIDer cannot continue. Repair the configuration and then run inSSIDer again.
+        ///   Looks up a localized string similar to The .NET Framework configuration on this computer is corrputed, WirelessFireless cannot continue. Repair the configuration and then run WirelessFireless again.
         ///
         ///We&apos;re sorry for any inconvenience..
         /// </summary>
@@ -217,7 +217,7 @@ namespace inSSIDer.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error opening one of the selected log files. Make sure inSSIDer is not still logging to it..
+        ///   Looks up a localized string similar to Error opening one of the selected log files. Make sure WirelessFireless is not still logging to it..
         /// </summary>
         internal static string GpxFileOpenError {
             get {
@@ -444,8 +444,8 @@ namespace inSSIDer.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to inSSIDer requires the WLAN AutoConfig service, which appears to be stopped. 
-        ///Please start WLAN AutoConfig and then run inSSIDer. 
+        ///   Looks up a localized string similar to WirelessFireless requires the WLAN AutoConfig service, which appears to be stopped. 
+        ///Please start WLAN AutoConfig and then run WirelessFireless. 
         ///
         ///Thanks!.
         /// </summary>
@@ -456,8 +456,8 @@ namespace inSSIDer.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to inSSIDer requires the Wireless Zero Configuration (WZC) Service, which appears to be stopped. 
-        ///Please start WZC and then run inSSIDer. 
+        ///   Looks up a localized string similar to WirelessFireless requires the Wireless Zero Configuration (WZC) Service, which appears to be stopped. 
+        ///Please start WZC and then run WirelessFireless. 
         ///
         ///Thanks!.
         /// </summary>

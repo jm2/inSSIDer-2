@@ -30,20 +30,20 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
-using inSSIDer.FileIO;
-using inSSIDer.HTML;
-using inSSIDer.Localization;
-using inSSIDer.Misc;
-using inSSIDer.Properties;
-using inSSIDer.Scanning;
-using inSSIDer.UI.Controls;
+using WirelessFireless.FileIO;
+using WirelessFireless.HTML;
+using WirelessFireless.Localization;
+using WirelessFireless.Misc;
+using WirelessFireless.Properties;
+using WirelessFireless.Scanning;
+using WirelessFireless.UI.Controls;
 using MetaGeek.Filters.Controllers;
 using MetaGeek.WiFi;
 using Microsoft.Win32;
 using Timer = System.Timers.Timer;
 using System.Diagnostics;
 
-namespace inSSIDer.UI.Forms
+namespace WirelessFireless.UI.Forms
 {
     public partial class FormMain : Form, IScannerUi
     {
@@ -179,7 +179,7 @@ namespace inSSIDer.UI.Forms
 
         #region Private Methods
 
-        private void AboutInSsiDerToolStripMenuItemClick(object sender, EventArgs e)
+        private void AboutWirelessFirelessToolStripMenuItemClick(object sender, EventArgs e)
         {
             using (FormAbout form = new FormAbout())
             {
@@ -373,11 +373,11 @@ namespace inSSIDer.UI.Forms
             UpdateButtonsStatus();
         }
 
-        private void InSsiDerForumsToolStripMenuItemClick(object sender, EventArgs e)
+        private void WirelessFirelessForumsToolStripMenuItemClick(object sender, EventArgs e)
         {
             try
             {
-                LinkHelper.OpenLink("http://metageek.net/forums/forumdisplay.php?4615-inSSIDer", Settings.Default.AnalyticsMedium, "HelpMenuForum");
+                LinkHelper.OpenLink("http://metageek.net/forums/forumdisplay.php?4615-WirelessFireless", Settings.Default.AnalyticsMedium, "HelpMenuForum");
             }
             catch (Win32Exception)
             {
@@ -386,7 +386,7 @@ namespace inSSIDer.UI.Forms
                 //
                 // This exception will be thrown when Firefox unexpectedly
                 // shuts down, and asks the user to restore the session when it is started by
-                // Inssider. Apparently, Windoz doesn't like this, because it tosses a
+                // WirelessFireless. Apparently, Windoz doesn't like this, because it tosses a
                 // file not found exception. Weird!
                 //
                 // Anyway, the lesser evil right now is to silently ignore

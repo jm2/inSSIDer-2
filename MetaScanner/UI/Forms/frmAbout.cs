@@ -26,11 +26,11 @@ using System;
 using System.ComponentModel;
 using System.Windows.Forms;
 
-using inSSIDer.HTML;
-using inSSIDer.Localization;
-using inSSIDer.Properties;
+using WirelessFireless.HTML;
+using WirelessFireless.Localization;
+using WirelessFireless.Properties;
 
-namespace inSSIDer.UI.Forms
+namespace WirelessFireless.UI.Forms
 {
     partial class FormAbout : Form
     {

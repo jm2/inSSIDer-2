@@ -27,12 +27,12 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-using inSSIDer.Properties;
-using inSSIDer.UI.Controls;
+using WirelessFireless.Properties;
+using WirelessFireless.UI.Controls;
 
 using MetaGeek.Gps;
 
-namespace inSSIDer
+namespace WirelessFireless
 {
     public static class SettingsMgr
     {

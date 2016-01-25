@@ -26,12 +26,12 @@ using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Net.NetworkInformation;
-using inSSIDer.Localization;
-using inSSIDer.Misc;
-using inSSIDer.Properties;
+using WirelessFireless.Localization;
+using WirelessFireless.Misc;
+using WirelessFireless.Properties;
 using ManagedWifi;
 
-namespace inSSIDer.Scanning
+namespace WirelessFireless.Scanning
 {
     public class InterfaceManager
     {

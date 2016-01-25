@@ -27,7 +27,7 @@ using System;
 using MetaGeek.Gps;
 using MetaGeek.WiFi;
 
-namespace inSSIDer.Scanning
+namespace WirelessFireless.Scanning
 {
     public class ScanCompleteEventArgs : EventArgs
     {

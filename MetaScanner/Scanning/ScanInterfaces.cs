@@ -30,7 +30,7 @@ using System.Text;
 
 using MetaGeek.WiFi;
 
-namespace inSSIDer.Scanning
+namespace WirelessFireless.Scanning
 {
     public interface IScanningInterface
     {

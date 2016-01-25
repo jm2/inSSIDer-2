@@ -25,7 +25,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace inSSIDer.UnhandledException
+namespace WirelessFireless.UnhandledException
 {
     /// <summary>
     /// 

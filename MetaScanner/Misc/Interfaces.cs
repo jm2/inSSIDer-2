@@ -22,9 +22,9 @@
 
 
 ////////////////////////////////////////////////////////////////
-using inSSIDer.Scanning;
+using WirelessFireless.Scanning;
 
-namespace inSSIDer.Misc
+namespace WirelessFireless.Misc
 {
     public interface IScannerUi
     {

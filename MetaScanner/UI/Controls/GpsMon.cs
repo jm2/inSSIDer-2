@@ -25,11 +25,11 @@
 using System;
 using System.Windows.Forms;
 
-using inSSIDer.Scanning;
+using WirelessFireless.Scanning;
 
 using MetaGeek.Gps;
 
-namespace inSSIDer.UI.Controls
+namespace WirelessFireless.UI.Controls
 {
     public partial class GpsMon : UserControl
     {

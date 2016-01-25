@@ -4,9 +4,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 
-using inSSIDer.Properties;
+using WirelessFireless.Properties;
 
-namespace inSSIDer.Misc
+namespace WirelessFireless.Misc
 {
     public class SignalBars
     {

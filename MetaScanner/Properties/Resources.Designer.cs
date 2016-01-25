@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace inSSIDer.Properties {
+namespace WirelessFireless.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace inSSIDer.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("inSSIDer.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WirelessFireless.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace inSSIDer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap launch_inssider {
+        public static System.Drawing.Bitmap launch_WirelessFireless {
             get {
-                object obj = ResourceManager.GetObject("launch_inssider", resourceCulture);
+                object obj = ResourceManager.GetObject("launch_WirelessFireless", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,16 +86,6 @@ namespace inSSIDer.Properties {
         public static System.Drawing.Bitmap longGripOn {
             get {
                 object obj = ResourceManager.GetObject("longGripOn", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap metageek_logo {
-            get {
-                object obj = ResourceManager.GetObject("metageek-logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

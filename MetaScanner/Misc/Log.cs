@@ -26,7 +26,7 @@ using System;
 using System.Diagnostics;
 using System.IO;
 
-namespace inSSIDer.Misc
+namespace WirelessFireless.Misc
 {
     public static class Log
     {

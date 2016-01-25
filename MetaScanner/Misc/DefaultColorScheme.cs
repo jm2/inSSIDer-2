@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace inSSIDer.Misc
+namespace WirelessFireless.Misc
 {
     public static class DefaultColorScheme
     {

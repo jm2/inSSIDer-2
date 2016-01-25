@@ -1,6 +1,6 @@
-﻿using inSSIDer.UI.Controls;
+﻿using WirelessFireless.UI.Controls;
 
-namespace inSSIDer.UI.Forms
+namespace WirelessFireless.UI.Forms
 {
     partial class FormGpsCfg
     {
@@ -30,9 +30,9 @@ namespace inSSIDer.UI.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnClose = new inSSIDer.UI.Controls.GrayButton();
-            this.btnSave = new inSSIDer.UI.Controls.GrayButton();
-            this.gbSerialPort = new inSSIDer.UI.Controls.GrayGroupBox();
+            this.btnClose = new WirelessFireless.UI.Controls.GrayButton();
+            this.btnSave = new WirelessFireless.UI.Controls.GrayButton();
+            this.gbSerialPort = new WirelessFireless.UI.Controls.GrayGroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();

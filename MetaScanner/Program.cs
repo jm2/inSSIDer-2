@@ -9,16 +9,16 @@ using System.Diagnostics;
 using System.Net.NetworkInformation;
 using System.Windows.Forms;
 
-using inSSIDer.Localization;
-using inSSIDer.Misc;
-using inSSIDer.Properties;
-using inSSIDer.Scanning;
-using inSSIDer.UI.Forms;
-using inSSIDer.UnhandledException;
+using WirelessFireless.Localization;
+using WirelessFireless.Misc;
+using WirelessFireless.Properties;
+using WirelessFireless.Scanning;
+using WirelessFireless.UI.Forms;
+using WirelessFireless.UnhandledException;
 
 using MetaGeek.Utils;
 
-namespace inSSIDer
+namespace WirelessFireless
 {
     static class Program
     {
@@ -91,7 +91,7 @@ namespace inSSIDer
                     body += "[Platform]\r\n" + Environment.GetEnvironmentVariable("PROCESSOR_ARCHITECTURE") + "\r\n\r\n";
                     body += "[StackTrace]\r\n" + PathScrubber.Scrub(ar.UnhandledException.ToString()) + "\r\n\r\n";
 
-                    MapiMailMessage message = new MapiMailMessage(@"inSSIDer 2 Error Report", body);
+                    MapiMailMessage message = new MapiMailMessage(@"WirelessFireless 2 Error Report", body);
                     message.Recipients.Add("error.reports@metageek.net");
                     message.ShowDialog(true);
                 }
@@ -106,7 +106,7 @@ namespace inSSIDer
         [STAThread]
         static void Main(string[] args)
         {
-            Debug.WriteLine("inSSIDer 2 version " + Application.ProductVersion + " Starting");
+            Debug.WriteLine("WirelessFireless 2 version " + Application.ProductVersion + " Starting");
             //TODO: Make conmmand line option to enable logging on debug builds. Like /log
 #if DEBUG && LOG
             Log.Start();

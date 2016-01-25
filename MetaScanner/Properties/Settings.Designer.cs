@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace inSSIDer.Properties {
+namespace WirelessFireless.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -205,7 +205,7 @@ namespace inSSIDer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("inssider2")]
+        [global::System.Configuration.DefaultSettingValueAttribute("WirelessFireless2")]
         public string AnalyticsMedium {
             get {
                 return ((string)(this["AnalyticsMedium"]));
