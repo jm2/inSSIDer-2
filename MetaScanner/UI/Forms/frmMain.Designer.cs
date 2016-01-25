@@ -31,6 +31,7 @@ namespace inSSIDer.UI.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.mainMenu = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,8 +53,6 @@ namespace inSSIDer.UI.Forms
             this.prevTabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inSSIDerForumsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutInSSIDerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gpsStatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,11 +67,10 @@ namespace inSSIDer.UI.Forms
             this.locationToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.loggingToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.gripContainer1 = new inSSIDer.UI.Controls.GripSplitContainer();
+            this.freeSoftwareLabel = new System.Windows.Forms.Label();
             this.scannerView = new inSSIDer.UI.Controls.ScannerView();
             this.filtersView = new MetaGeek.Filters.Views.FiltersView();
             this.detailsTabControl = new inSSIDer.UI.Controls.CustomTabControl();
-            this.tabNews = new System.Windows.Forms.TabPage();
-            this.htmlControl = new inSSIDer.HTML.HtmlControl();
             this.tabTimeGraph = new System.Windows.Forms.TabPage();
             this.timeGraph1 = new inSSIDer.UI.Controls.TimeGraph();
             this.tab24Chan = new System.Windows.Forms.TabPage();
@@ -84,11 +82,11 @@ namespace inSSIDer.UI.Forms
             this.networkInterfaceSelector1 = new inSSIDer.UI.Controls.NetworkInterfaceSelector();
             this.mainMenu.SuspendLayout();
             this.statusStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gripContainer1)).BeginInit();
             this.gripContainer1.Panel1.SuspendLayout();
             this.gripContainer1.Panel2.SuspendLayout();
             this.gripContainer1.SuspendLayout();
             this.detailsTabControl.SuspendLayout();
-            this.tabNews.SuspendLayout();
             this.tabTimeGraph.SuspendLayout();
             this.tab24Chan.SuspendLayout();
             this.tab58Chan.SuspendLayout();
@@ -235,16 +233,16 @@ namespace inSSIDer.UI.Forms
             // 
             this.nextTabToolStripMenuItem.Name = "nextTabToolStripMenuItem";
             this.nextTabToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Tab)));
-            this.nextTabToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.nextTabToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.nextTabToolStripMenuItem.Text = "Next Tab";
             this.nextTabToolStripMenuItem.Click += new System.EventHandler(this.NextTabToolStripMenuItemClick);
             // 
             // prevTabToolStripMenuItem
             // 
             this.prevTabToolStripMenuItem.Name = "prevTabToolStripMenuItem";
-            this.prevTabToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
+            this.prevTabToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.Tab)));
-            this.prevTabToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.prevTabToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.prevTabToolStripMenuItem.Text = "Prev Tab";
             this.prevTabToolStripMenuItem.Click += new System.EventHandler(this.PrevTabToolStripMenuItemClick);
             // 
@@ -252,8 +250,6 @@ namespace inSSIDer.UI.Forms
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inSSIDerForumsToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.checkForUpdatesToolStripMenuItem,
             this.toolStripSeparator4,
             this.aboutInSSIDerToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
@@ -263,31 +259,19 @@ namespace inSSIDer.UI.Forms
             // inSSIDerForumsToolStripMenuItem
             // 
             this.inSSIDerForumsToolStripMenuItem.Name = "inSSIDerForumsToolStripMenuItem";
-            this.inSSIDerForumsToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.inSSIDerForumsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.inSSIDerForumsToolStripMenuItem.Text = "inSSIDer Forums";
             this.inSSIDerForumsToolStripMenuItem.Click += new System.EventHandler(this.InSsiDerForumsToolStripMenuItemClick);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(167, 6);
-            // 
-            // checkForUpdatesToolStripMenuItem
-            // 
-            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
-            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.checkForUpdatesToolStripMenuItem.Text = "Check for updates";
-            this.checkForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.CheckForUpdatesToolStripMenuItemClick);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(167, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(157, 6);
             // 
             // aboutInSSIDerToolStripMenuItem
             // 
             this.aboutInSSIDerToolStripMenuItem.Name = "aboutInSSIDerToolStripMenuItem";
-            this.aboutInSSIDerToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.aboutInSSIDerToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.aboutInSSIDerToolStripMenuItem.Text = "About inSSIDer";
             this.aboutInSSIDerToolStripMenuItem.Click += new System.EventHandler(this.AboutInSsiDerToolStripMenuItemClick);
             // 
@@ -396,6 +380,7 @@ namespace inSSIDer.UI.Forms
             // 
             // gripContainer1.Panel1
             // 
+            this.gripContainer1.Panel1.Controls.Add(this.freeSoftwareLabel);
             this.gripContainer1.Panel1.Controls.Add(this.scannerView);
             this.gripContainer1.Panel1.Controls.Add(this.filtersView);
             this.gripContainer1.Panel1MinSize = 69;
@@ -408,6 +393,16 @@ namespace inSSIDer.UI.Forms
             this.gripContainer1.SplitterDistance = 245;
             this.gripContainer1.SplitterWidth = 7;
             this.gripContainer1.TabIndex = 1;
+            // 
+            // freeSoftwareLabel
+            // 
+            this.freeSoftwareLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.freeSoftwareLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.freeSoftwareLabel.Location = new System.Drawing.Point(908, 0);
+            this.freeSoftwareLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.freeSoftwareLabel.Name = "freeSoftwareLabel";
+            this.freeSoftwareLabel.Size = new System.Drawing.Size(100, 66);
+            this.freeSoftwareLabel.TabIndex = 2;
             // 
             // scannerView
             // 
@@ -431,7 +426,6 @@ namespace inSSIDer.UI.Forms
             // 
             // detailsTabControl
             // 
-            this.detailsTabControl.Controls.Add(this.tabNews);
             this.detailsTabControl.Controls.Add(this.tabTimeGraph);
             this.detailsTabControl.Controls.Add(this.tab24Chan);
             this.detailsTabControl.Controls.Add(this.tab58Chan);
@@ -446,32 +440,6 @@ namespace inSSIDer.UI.Forms
             this.detailsTabControl.TabIndex = 0;
             this.detailsTabControl.TabStop = false;
             this.detailsTabControl.MouseDown += new System.Windows.Forms.MouseEventHandler(this.detailsTabControl_MouseDown);
-            // 
-            // tabNews
-            // 
-            this.tabNews.Controls.Add(this.htmlControl);
-            this.tabNews.Location = new System.Drawing.Point(4, 29);
-            this.tabNews.Name = "tabNews";
-            this.tabNews.Size = new System.Drawing.Size(1000, 229);
-            this.tabNews.TabIndex = 5;
-            this.tabNews.Text = "News";
-            this.tabNews.UseVisualStyleBackColor = true;
-            // 
-            // htmlControl
-            // 
-            this.htmlControl.AnalyticsSource = "NewsTab";
-            this.htmlControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.htmlControl.IsWebBrowserContextMenuEnabled = false;
-            this.htmlControl.Location = new System.Drawing.Point(0, 0);
-            this.htmlControl.MinimumSize = new System.Drawing.Size(20, 20);
-            this.htmlControl.Name = "htmlControl";
-            this.htmlControl.OpenWebLinks = false;
-            this.htmlControl.Size = new System.Drawing.Size(1000, 229);
-            this.htmlControl.TabIndex = 0;
-            this.htmlControl.UpdateIntervalDays = 1F;
-            this.htmlControl.UpdateUrl = "http://www.metageek.net/blog/feed";
-            this.htmlControl.Url = new System.Uri("about:blank", System.UriKind.Absolute);
-            this.htmlControl.WebBrowserShortcutsEnabled = false;
             // 
             // tabTimeGraph
             // 
@@ -611,9 +579,9 @@ namespace inSSIDer.UI.Forms
             this.statusStrip.PerformLayout();
             this.gripContainer1.Panel1.ResumeLayout(false);
             this.gripContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gripContainer1)).EndInit();
             this.gripContainer1.ResumeLayout(false);
             this.detailsTabControl.ResumeLayout(false);
-            this.tabNews.ResumeLayout(false);
             this.tabTimeGraph.ResumeLayout(false);
             this.tab24Chan.ResumeLayout(false);
             this.tab58Chan.ResumeLayout(false);
@@ -622,7 +590,7 @@ namespace inSSIDer.UI.Forms
             this.PerformLayout();
 
         }
-
+        
         #endregion
 
         private System.Windows.Forms.MenuStrip mainMenu;
@@ -643,8 +611,6 @@ namespace inSSIDer.UI.Forms
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutInSSIDerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inSSIDerForumsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem crashToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gpsStatToolStripMenuItem;
@@ -664,8 +630,6 @@ namespace inSSIDer.UI.Forms
         private System.Windows.Forms.ToolStripMenuItem stopNullScanningToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel apCountLabel;
         private MetaGeek.Filters.Views.FiltersView filtersView;
-        private System.Windows.Forms.TabPage tabNews;
-        private HtmlControl htmlControl;
         private System.Windows.Forms.TabPage tabTimeGraph;
         private TimeGraph timeGraph1;
         private System.Windows.Forms.TabPage tab24Chan;
@@ -675,5 +639,6 @@ namespace inSSIDer.UI.Forms
         private System.Windows.Forms.TabPage tabGps;
         private GpsMon gpsMon1;
         private CustomTabControl detailsTabControl;
+        private System.Windows.Forms.Label freeSoftwareLabel;
     }
 }
