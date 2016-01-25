@@ -1,0 +1,3 @@
+[submodule "tools"]
+	path = tools
+	url = git@codebasehq.com:metageek/nutbrown/toolsdir.git
