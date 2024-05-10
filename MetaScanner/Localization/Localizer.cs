@@ -27,7 +27,7 @@ using System.Drawing;
 using System.Reflection;
 using System.Resources;
 
-namespace inSSIDer.Localization
+namespace WirelessFireless.Localization
 {
     /// <summary>
     /// Class that provides localized string resources
@@ -58,7 +58,7 @@ namespace inSSIDer.Localization
                     // double check
                     if (null == _manager)
                     {
-                        _manager = new ResourceManager("inSSIDer.LocalizerResources",
+                        _manager = new ResourceManager("WirelessFireless.LocalizerResources",
                             Assembly.GetExecutingAssembly());
                     }
                 }
@@ -85,7 +85,7 @@ namespace inSSIDer.Localization
                     // double check
                     if (null == _manager)
                     {
-                        _manager = new ResourceManager("inSSIDer.Localization.LocalizerResources",
+                        _manager = new ResourceManager("WirelessFireless.Localization.LocalizerResources",
                                 Assembly.GetExecutingAssembly());
                     }
                 }

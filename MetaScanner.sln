@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2010
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaScanner", "MetaScanner\MetaScanner.csproj", "{0AAD1ED7-4FDE-4768-B3FC-E9B502CDEA8A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{14B730A0-6147-4767-A4B4-2AC86DD9FB8C} = {14B730A0-6147-4767-A4B4-2AC86DD9FB8C}
@@ -14,8 +16,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaGeek.WiFi", "MetaGeek.W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaGeek.Gps", "MetaGeek.Gps\MetaGeek.Gps.csproj", "{92A74448-AA21-49EF-90F6-B4AA05D092B8}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer x86", "Installer\Installer.vdproj", "{F311E62F-6294-473B-9972-48E6B51AB8A7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{83DE851C-C566-4CAB-98B7-089444B248D3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C7A7BF17-797A-4B19-B0DC-1440ECFBB936}"
@@ -26,9 +26,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = MetaScanner.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Crash|x86 = Crash|x86
 		Debug|x86 = Debug|x86
@@ -65,15 +62,14 @@ Global
 		{92A74448-AA21-49EF-90F6-B4AA05D092B8}.Debug|x86.Build.0 = Debug|x86
 		{92A74448-AA21-49EF-90F6-B4AA05D092B8}.Release|x86.ActiveCfg = Release|x86
 		{92A74448-AA21-49EF-90F6-B4AA05D092B8}.Release|x86.Build.0 = Release|x86
-		{F311E62F-6294-473B-9972-48E6B51AB8A7}.Crash|x86.ActiveCfg = Release
-		{F311E62F-6294-473B-9972-48E6B51AB8A7}.Debug|x86.ActiveCfg = Debug
-		{F311E62F-6294-473B-9972-48E6B51AB8A7}.Release|x86.ActiveCfg = Release
-		{F311E62F-6294-473B-9972-48E6B51AB8A7}.Release|x86.Build.0 = Release
 		{83DE851C-C566-4CAB-98B7-089444B248D3}.Crash|x86.ActiveCfg = Release|Any CPU
 		{83DE851C-C566-4CAB-98B7-089444B248D3}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{83DE851C-C566-4CAB-98B7-089444B248D3}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = MetaScanner.vsmdi
 	EndGlobalSection
 EndGlobal

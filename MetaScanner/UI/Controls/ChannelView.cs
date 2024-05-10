@@ -28,13 +28,13 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-using inSSIDer.Localization;
-using inSSIDer.Misc;
-using inSSIDer.Scanning;
+using WirelessFireless.Localization;
+using WirelessFireless.Misc;
+using WirelessFireless.Scanning;
 
 using MetaGeek.WiFi;
 
-namespace inSSIDer.UI.Controls
+namespace WirelessFireless.UI.Controls
 {
     public partial class ChannelView : UserControl
     {

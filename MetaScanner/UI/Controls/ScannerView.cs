@@ -29,12 +29,12 @@ using System.Drawing.Drawing2D;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
-using inSSIDer.Misc;
-using inSSIDer.Scanning;
+using WirelessFireless.Misc;
+using WirelessFireless.Scanning;
 
 using MetaGeek.WiFi;
 
-namespace inSSIDer.UI.Controls
+namespace WirelessFireless.UI.Controls
 {
     public sealed partial class ScannerView : UserControl, IDisposable
     {

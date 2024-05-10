@@ -26,7 +26,7 @@ using System.IO;
 using System.Web.UI;
 using System.Xml;
 
-namespace inSSIDer.HTML
+namespace WirelessFireless.HTML
 {
     class RssConverter
     {

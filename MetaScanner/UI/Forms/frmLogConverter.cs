@@ -29,11 +29,11 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
-using inSSIDer.FileIO;
-using inSSIDer.Localization;
-using inSSIDer.Properties;
+using WirelessFireless.FileIO;
+using WirelessFireless.Localization;
+using WirelessFireless.Properties;
 
-namespace inSSIDer.UI.Forms
+namespace WirelessFireless.UI.Forms
 {
     public partial class FormLogConverter : Form
     {
@@ -161,7 +161,7 @@ namespace inSSIDer.UI.Forms
             }
             catch(IOException)
             {
-                //This happens when the file is locked by another process or inSSIDer is still logging to it.
+                //This happens when the file is locked by another process or WirelessFireless is still logging to it.
                 MessageBox.Show(
                     Localizer.GetString("GpxFileOpenError"),
                     Localizer.GetString("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);

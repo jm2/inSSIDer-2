@@ -28,11 +28,11 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-using inSSIDer.Scanning;
+using WirelessFireless.Scanning;
 
 using MetaGeek.Gps;
 
-namespace inSSIDer.UI.Controls
+namespace WirelessFireless.UI.Controls
 {
     public partial class GpsGraph : UserControl
     {

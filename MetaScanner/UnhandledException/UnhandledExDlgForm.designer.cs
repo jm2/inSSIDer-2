@@ -1,4 +1,4 @@
-namespace inSSIDer.UnhandledException
+namespace WirelessFireless.UnhandledException
 {
     partial class UnhandledExDlgForm
     {
@@ -163,7 +163,6 @@ namespace inSSIDer.UnhandledException
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Image = global::inSSIDer.Properties.Resources.metageek_logo;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.label1.Location = new System.Drawing.Point(3, 4);
             this.label1.Name = "label1";

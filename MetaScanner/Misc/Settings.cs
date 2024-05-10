@@ -26,7 +26,7 @@ using System;
 using System.ComponentModel;
 using System.Configuration;
 
-namespace inSSIDer.Properties
+namespace WirelessFireless.Properties
 {
     internal sealed partial class Settings
     {

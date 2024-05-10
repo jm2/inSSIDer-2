@@ -26,12 +26,12 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
-using inSSIDer.Localization;
+using WirelessFireless.Localization;
 using ManagedWifi;
 using MetaGeek.IoctlNdis;
 using MetaGeek.WiFi;
 
-namespace inSSIDer.Misc
+namespace WirelessFireless.Misc
 {
     public static class Utilities
     {

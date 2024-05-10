@@ -26,7 +26,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace inSSIDer.UI.Controls
+namespace WirelessFireless.UI.Controls
 {
     public class GrayGroupBox : GroupBox
     {

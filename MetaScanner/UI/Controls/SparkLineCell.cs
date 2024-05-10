@@ -25,11 +25,11 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-using inSSIDer.Misc;
+using WirelessFireless.Misc;
 
 using MetaGeek.WiFi;
 
-namespace inSSIDer.UI.Controls
+namespace WirelessFireless.UI.Controls
 {
     /// <summary>
     /// This class is used for displaying spark lines of the RSSI values in a DataGridView.

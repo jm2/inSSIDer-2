@@ -1,4 +1,4 @@
-﻿namespace inSSIDer.UI.Controls
+﻿namespace WirelessFireless.UI.Controls
 {
     partial class ChannelView
     {

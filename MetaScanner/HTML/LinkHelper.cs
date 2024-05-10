@@ -29,7 +29,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace inSSIDer.HTML
+namespace WirelessFireless.HTML
 {
     public static class LinkHelper
     {

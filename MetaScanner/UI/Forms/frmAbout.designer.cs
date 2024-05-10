@@ -1,4 +1,4 @@
-namespace inSSIDer.UI.Forms
+namespace WirelessFireless.UI.Forms
 {
     /// <summary>
     /// 
@@ -74,7 +74,7 @@ namespace inSSIDer.UI.Forms
             // 
             // aboutHeaderImage
             // 
-            this.aboutHeaderImage.Image = global::inSSIDer.Properties.Resources.launch_inssider;
+            this.aboutHeaderImage.Image = global::WirelessFireless.Properties.Resources.launch_WirelessFireless;
             resources.ApplyResources(this.aboutHeaderImage, "aboutHeaderImage");
             this.aboutHeaderImage.Name = "aboutHeaderImage";
             this.aboutHeaderImage.TabStop = false;

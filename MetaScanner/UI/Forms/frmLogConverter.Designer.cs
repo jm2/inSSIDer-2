@@ -1,6 +1,6 @@
-﻿using inSSIDer.UI.Controls;
+﻿using WirelessFireless.UI.Controls;
 
-namespace inSSIDer.UI.Forms
+namespace WirelessFireless.UI.Forms
 {
     partial class FormLogConverter
     {
@@ -33,9 +33,9 @@ namespace inSSIDer.UI.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogConverter));
             this.openFile = new System.Windows.Forms.OpenFileDialog();
             this.fbOutput = new System.Windows.Forms.FolderBrowserDialog();
-            this.btnCancel = new inSSIDer.UI.Controls.GrayButton();
-            this.btnExport = new inSSIDer.UI.Controls.GrayButton();
-            this.grayGroupBox3 = new inSSIDer.UI.Controls.GrayGroupBox();
+            this.btnCancel = new WirelessFireless.UI.Controls.GrayButton();
+            this.btnExport = new WirelessFireless.UI.Controls.GrayButton();
+            this.grayGroupBox3 = new WirelessFireless.UI.Controls.GrayGroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,19 +49,19 @@ namespace inSSIDer.UI.Forms
             this.chGPSsatCount = new System.Windows.Forms.CheckBox();
             this.chGPSFixLost = new System.Windows.Forms.CheckBox();
             this.chGPSLockup = new System.Windows.Forms.CheckBox();
-            this.grayGroupBox2 = new inSSIDer.UI.Controls.GrayGroupBox();
+            this.grayGroupBox2 = new WirelessFireless.UI.Controls.GrayGroupBox();
             this.lblVis = new System.Windows.Forms.Label();
             this.chShowRssiMarkers = new System.Windows.Forms.CheckBox();
-            this.grayGroupBox1 = new inSSIDer.UI.Controls.GrayGroupBox();
+            this.grayGroupBox1 = new WirelessFireless.UI.Controls.GrayGroupBox();
             this.cmbOrganize = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.chExportComp = new System.Windows.Forms.CheckBox();
             this.lblFiles = new System.Windows.Forms.Label();
             this.chExportEachAp = new System.Windows.Forms.CheckBox();
-            this.btnChangeInFiles = new inSSIDer.UI.Controls.GrayButton();
+            this.btnChangeInFiles = new WirelessFireless.UI.Controls.GrayButton();
             this.chExportSummary = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnChangeOutdir = new inSSIDer.UI.Controls.GrayButton();
+            this.btnChangeOutdir = new WirelessFireless.UI.Controls.GrayButton();
             this.label2 = new System.Windows.Forms.Label();
             this.txtOutDir = new System.Windows.Forms.TextBox();
             this.txtInFiles = new System.Windows.Forms.TextBox();

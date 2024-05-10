@@ -1,4 +1,4 @@
-﻿namespace inSSIDer.UI.Controls
+﻿namespace WirelessFireless.UI.Controls
 {
     partial class GpsMon
     {
@@ -39,7 +39,7 @@
             this.lblPortName = new System.Windows.Forms.Label();
             this.lblNoGps = new System.Windows.Forms.Label();
             this.lblSatCount = new System.Windows.Forms.Label();
-            this.gpsGraph1 = new inSSIDer.UI.Controls.GpsGraph();
+            this.gpsGraph1 = new WirelessFireless.UI.Controls.GpsGraph();
             this.SuspendLayout();
             // 
             // lblLat
@@ -213,6 +213,6 @@
         private System.Windows.Forms.Label lblPortName;
         private System.Windows.Forms.Label lblNoGps;
         private System.Windows.Forms.Label lblSatCount;
-        private inSSIDer.UI.Controls.GpsGraph gpsGraph1;
+        private WirelessFireless.UI.Controls.GpsGraph gpsGraph1;
     }
 }

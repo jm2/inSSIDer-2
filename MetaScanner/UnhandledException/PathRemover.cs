@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace inSSIDer.UnhandledException
+namespace WirelessFireless.UnhandledException
 {
     public class PathScrubber
     {

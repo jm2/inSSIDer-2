@@ -28,12 +28,12 @@ using System.Globalization;
 using System.IO;
 using System.Xml;
 
-using inSSIDer.Misc;
+using WirelessFireless.Misc;
 
 using MetaGeek.Gps;
 using MetaGeek.WiFi;
 
-namespace inSSIDer.FileIO
+namespace WirelessFireless.FileIO
 {
     public static class GpxIO
     {

@@ -27,12 +27,12 @@ using System.Collections.Generic;
 using System.Linq;
 using FilterFramework;
 using MetaGeek.Filters.Controllers;
-using inSSIDer.Misc;
+using WirelessFireless.Misc;
 
 using MetaGeek.Gps;
 using MetaGeek.WiFi;
 
-namespace inSSIDer.Scanning
+namespace WirelessFireless.Scanning
 {
     public class NetworkDataCacheN : IDisposable
     {

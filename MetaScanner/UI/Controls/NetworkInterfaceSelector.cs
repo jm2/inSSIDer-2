@@ -28,12 +28,12 @@ using System.Drawing;
 using System.Net.NetworkInformation;
 using System.Timers;
 using System.Windows.Forms;
-using inSSIDer.Localization;
-using inSSIDer.Misc;
-using inSSIDer.Scanning;
+using WirelessFireless.Localization;
+using WirelessFireless.Misc;
+using WirelessFireless.Scanning;
 using ManagedWifi;
 
-namespace inSSIDer.UI.Controls
+namespace WirelessFireless.UI.Controls
 {
     public partial class NetworkInterfaceSelector : UserControl
     {

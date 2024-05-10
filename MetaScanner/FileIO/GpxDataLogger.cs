@@ -30,7 +30,7 @@ using System.Xml;
 using MetaGeek.Gps;
 using MetaGeek.WiFi;
 
-namespace inSSIDer.FileIO
+namespace WirelessFireless.FileIO
 {
     public class GpxDataLogger
     {

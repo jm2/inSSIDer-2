@@ -30,20 +30,20 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
-using inSSIDer.FileIO;
-using inSSIDer.HTML;
-using inSSIDer.Localization;
-using inSSIDer.Misc;
-using inSSIDer.Properties;
-using inSSIDer.Scanning;
-using inSSIDer.UI.Controls;
-using inSSIDer.Version;
+using WirelessFireless.FileIO;
+using WirelessFireless.HTML;
+using WirelessFireless.Localization;
+using WirelessFireless.Misc;
+using WirelessFireless.Properties;
+using WirelessFireless.Scanning;
+using WirelessFireless.UI.Controls;
 using MetaGeek.Filters.Controllers;
 using MetaGeek.WiFi;
 using Microsoft.Win32;
 using Timer = System.Timers.Timer;
+using System.Diagnostics;
 
-namespace inSSIDer.UI.Forms
+namespace WirelessFireless.UI.Forms
 {
     public partial class FormMain : Form, IScannerUi
     {
@@ -140,6 +140,13 @@ namespace inSSIDer.UI.Forms
             {
                 _scanner.StopScanning();
             }
+
+            if (_scanner.GpsControl.Enabled)
+            {
+                _scanner.GpsControl.Stop();
+                _scanner.Logger.Stop();
+                _gpsStatTimer.Stop();
+            }
             scannerView.Dispose();
             _scanner.Dispose();
             SettingsMgr.SaveScannerViewSettings(scannerView);
@@ -155,23 +162,6 @@ namespace inSSIDer.UI.Forms
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-
-            CheckForUpdate(false);
-
-            // Move news HTML to temp directory if it's not already there
-            // This allows us to update the news file
-            bool copied = CopyHtmlToTemp();
-
-#if(DEBUG)
-            copied = true;
-#endif
-            // Force update if we just copied the file over
-            bool newsDisplayedProperly = htmlControl.UpdateFile(copied);
-            if (!newsDisplayedProperly)
-            {
-                //tabNews.Visible = false;
-                detailsTabControl.Controls.Remove(tabNews);
-            }
 
 #if CRASH
             crashToolStripMenuItem.Enabled = true;
@@ -196,7 +186,7 @@ namespace inSSIDer.UI.Forms
 
         #region Private Methods
 
-        private void AboutInSsiDerToolStripMenuItemClick(object sender, EventArgs e)
+        private void AboutWirelessFirelessToolStripMenuItemClick(object sender, EventArgs e)
         {
             using (FormAbout form = new FormAbout())
             {
@@ -208,58 +198,7 @@ namespace inSSIDer.UI.Forms
         {
             if (sdlgLog.ShowDialog(this) == DialogResult.OK && _scanner.Logger != null) _scanner.Logger.Filename = sdlgLog.FileName;
         }
-
-        /// <summary>
-        /// Checks for update and displays update dialog if there is an update available
-        /// </summary>
-        /// <param name="userInitiated">Is the update check initiated by the user?</param>
-        private static void CheckForUpdate(bool userInitiated)
-        {
-            ParameterizedThreadStart ps = CheckForUpdateThread;
-            Thread updateThread = new Thread(ps);
-            updateThread.Start(userInitiated);
-        }
-
-        private void CheckForUpdatesToolStripMenuItemClick(object sender, EventArgs e)
-        {
-            CheckForUpdate(true);
-        }
-
-        private static void CheckForUpdateThread(object data)
-        {
-            bool userInitiated = (bool)data;
-
-            // don't check if the user didn't ask us to and it isn't time to check yet
-            if (Settings.Default.VersionNextUpdateCheck > DateTime.Now && !userInitiated)
-                return;
-
-            if (VersionInfo.CheckForAvailableUpdate(@"http://www.metageek.net/misc/versions/inssider.txt", Settings.Default.VersionIgnoreThisVersion, userInitiated))
-            {
-                switch (VersionInfo.ShowUpdateDialog())
-                {
-                    case DialogResult.OK:
-                        try
-                        {
-                            LinkHelper.OpenLink(VersionInfo.DownloadUrl, Settings.Default.AnalyticsMedium, @"CheckUpdateForm");
-                        }
-                        catch (Win32Exception) { }
-                        break;
-                    case DialogResult.Cancel:
-                        Settings.Default.VersionNextUpdateCheck = DateTime.Now + TimeSpan.FromDays(Settings.Default.VersionDaysBetweenUpdateReminders);
-                        break;
-                    case DialogResult.Ignore:
-                        Settings.Default.VersionIgnoreThisVersion = VersionInfo.LatestVersion;
-                        break;
-                }
-            }
-            else
-            {
-                Settings.Default.VersionNextUpdateCheck = DateTime.Now + TimeSpan.FromDays(1);
-                if (userInitiated)
-                    MessageBox.Show(Localizer.GetString("ApplicationUpToDate"));
-            }
-        }
-
+                
         private void ConfigureGps()
         {
             using (FormGpsCfg form = new FormGpsCfg(_scanner.GpsControl))
@@ -282,38 +221,6 @@ namespace inSSIDer.UI.Forms
             {
                 form.ShowDialog(this);
             }
-        }
-
-        /// <summary>
-        /// Copies HTML files to temp directory
-        /// </summary>
-        /// <returns>True if copied files, false otherwise</returns>
-        private bool CopyHtmlToTemp()
-        {
-            bool copiedFile = false;
-
-            string newsDirectory = Path.GetTempPath() + "MetaGeekNews" + Path.DirectorySeparatorChar;
-            string newsFile = newsDirectory + "news.html";
-
-            try
-            {
-                //// check whether the rss already exists
-                if (!File.Exists(newsFile))
-                {
-                    Directory.CreateDirectory(newsDirectory);
-                    File.Copy("HTML\\Content\\news.html", newsFile, true);
-                    copiedFile = true;
-                }
-                if (!File.Exists(newsDirectory + "news.css"))
-                {
-                    File.Copy("HTML\\Content\\news.css", newsDirectory + "news.css", true);
-                }
-            }
-            catch (Exception)
-            {
-            }
-
-            return copiedFile;
         }
 
         private void CrashToolStripMenuItemClick(object sender, EventArgs e)
@@ -473,11 +380,11 @@ namespace inSSIDer.UI.Forms
             UpdateButtonsStatus();
         }
 
-        private void InSsiDerForumsToolStripMenuItemClick(object sender, EventArgs e)
+        private void WirelessFirelessForumsToolStripMenuItemClick(object sender, EventArgs e)
         {
             try
             {
-                LinkHelper.OpenLink("http://metageek.net/forums/forumdisplay.php?4615-inSSIDer", Settings.Default.AnalyticsMedium, "HelpMenuForum");
+                LinkHelper.OpenLink("http://metageek.net/forums/forumdisplay.php?4615-WirelessFireless", Settings.Default.AnalyticsMedium, "HelpMenuForum");
             }
             catch (Win32Exception)
             {
@@ -486,7 +393,7 @@ namespace inSSIDer.UI.Forms
                 //
                 // This exception will be thrown when Firefox unexpectedly
                 // shuts down, and asks the user to restore the session when it is started by
-                // Inssider. Apparently, Windoz doesn't like this, because it tosses a
+                // WirelessFireless. Apparently, Windoz doesn't like this, because it tosses a
                 // file not found exception. Weird!
                 //
                 // Anyway, the lesser evil right now is to silently ignore
@@ -717,5 +624,6 @@ namespace inSSIDer.UI.Forms
         }
 
         #endregion Private Methods
+        
     }
 }

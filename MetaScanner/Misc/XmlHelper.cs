@@ -26,9 +26,9 @@ using System.Globalization;
 using System.Text;
 using System.Xml;
 
-using inSSIDer.FileIO;
+using WirelessFireless.FileIO;
 
-namespace inSSIDer.Misc
+namespace WirelessFireless.Misc
 {
     public class XmlHelper
     {
